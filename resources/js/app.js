@@ -1,7 +1,8 @@
-require('./bootstrap');
+require("./bootstrap");
 
-import Alpine from 'alpinejs';
+import { createApp } from "vue";
+import ProductFilter from "./components/ProductFilter";
 
-window.Alpine = Alpine;
-
-Alpine.start();
+const app = createApp({});
+app.component("product-filter", ProductFilter);
+app.mount("#app");
