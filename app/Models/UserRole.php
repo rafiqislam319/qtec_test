@@ -11,8 +11,8 @@ class UserRole extends Model
 
     protected $fillable = ['role'];
 
-    // public function userInfo()
-    // {
-    //     return $this->hasMany(UserInfo::class);
-    // }
+    public function userInfo()
+    {
+        return $this->hasMany(UserInfo::class);
+    }
 }
